@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Outfit:wght@200&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-family: 'Hanken Grotesk', sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-left: 25%;
+        grid-gap: 30px;
+        margin-top: 7%;
+      }
+
+      .box {
+        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 20px;
+        height: 69vh;
+      }
+
+      .result {
+        text-align: center;
+        padding-top: 20px;
+        color: hsl(241, 100%, 89%);
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .circle {
+        text-align: center;
+        background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        border-radius: 50%;
+        max-width: 60%;
+        margin-left: 63px;
+        margin-top: 10px;
+        scale: 1;
+      }
+
+      h3 {
+        color: hsl(0, 0%, 100%);
+        font-weight: bold;
+        text-align: center;
+          position: relative;
+          top: 38px;
+          font-size: 50px;
+          font-weight: bolder;
+      }
+
+      .circle p {
+        font-size: 18px;
+        color: hsl(241, 100%, 89%);
+        position: relative;
+        bottom: 50px;
+      }
+      
+      .great {
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        font-weight: bold;
+      }
+      
+      .left-side p{
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .right-side {
+        margin-top: 20px;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .reaction span {
+        color: hsl(0, 100%, 67%);
+      }
+      img {
+        margin-top: 30px;
+      }
+      button {
+        margin-top: 25px;
+        width: 40%;
+        border-radius: 50px;
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin: auto;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="left-side">
+      <div class="box">
+      <h2 class="result">Your Result</h2>
+      <div class="circle"><h3>76</h3><br /><p>of 100</p></div>
+      <h2 class="great">Great</h2>
+      <p>
+        You scored higher than 65% of <br> the people who have taken <br> these tests.
+      </p>
+    </section>
+    <section class="right-side">
+      <h2>Summary</h2>
+      <div class="inner-data">
+      <p class="reaction"><span><img src="/assets/images/icon-reaction.svg" alt=""> Reaction</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style= "font-weight: bold; color: black;">80</span> / 100</p>
+      <p class="memory"><span style="color: hsl(39, 100%, 56%);"><img src="/assets/images/icon-memory.svg" alt=""> Memory</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">92</span> / 100</p>
+      <p class="verbal"><span style="color: hsl(166, 100%, 37%);"><img src="/assets/images/icon-verbal.svg" alt=""> Verbal</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">61</span> / 100</p>
+      <p class="visual"><span style="color: hsl(234, 85%, 45%);"><img src="/assets/images/icon-visual.svg" alt=""> Visual</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">72</span> / 100</p>
+    </div>
+      <button><p>Continue</p></button>
+    </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Saad Ali</a>.
+    </div>
+  </body>
+</html>
